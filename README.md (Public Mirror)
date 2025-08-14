@@ -1,0 +1,67 @@
+# ADC Validator Suite (Public Overview)
+
+**Security-first Web3 validation tools**  
+This is a public mirror repository for grant reviewers and the community.  
+It contains non-sensitive documentation and example files only.  
+Core implementation, API keys, and infrastructure details are kept private for security reasons.
+
+---
+
+## 🔍 Overview
+The **ADC Validator Suite** includes:
+- **CryptoGuard** — Multi-chain wallet validation with AI risk scoring.
+- **AssetGuard** — Token, coin, and NFT risk validation.
+- **ISO 20022 Audit Export** — Generate standardized audit trails.
+
+---
+
+## 🛡 Security-first Design
+- **Stateless**: No PII stored; all processing done in-memory.
+- **Aggregate Logging Only**: Counts & metrics, no wallet addresses or IPs.
+- **Multi-layer Security**:
+  - TLS enforced
+  - Security headers (HSTS, CSP, X-Frame-Options, Referrer-Policy)
+  - CORS allowlist
+  - Rate limiting + WAF
+
+For more, see:
+- [`docs/security/SECURITY.md`](docs/security/SECURITY.md)
+- [`docs/security/DATAFLOW.md`](docs/security/DATAFLOW.md)
+- [`docs/security/ISO-sample.xml`](docs/security/ISO-sample.xml)
+
+---
+
+## 📊 Example Aggregate Metrics
+*(Dummy data for illustration)*
+
+
+{
+“date”: “2025-01-01”,
+“total_requests”: 1523,
+“unique_clients_hashed_rotating”: 821,
+“chains_touched”: 5,
+“high_risk_flags”: 42
+}
+
+
+---
+
+## 🌐 Live Demo (Public)
+A demo endpoint is available for reviewers.  
+**Note:** This demo uses **mock data** and does not connect to live infrastructure.
+
+[▶ Visit Demo](https://example.com/demo) *(Dummy link)*
+
+---
+
+## 📢 Security Disclosure
+If you discover a vulnerability, please report it responsibly:  
+**Email:** security@example.com *(dummy address)*
+
+---
+
+## ⚠ Disclaimer
+This repository contains only non-sensitive, dummy data and documentation.  
+It is intended to illustrate security posture and design principles without exposing production details.
+
+---
